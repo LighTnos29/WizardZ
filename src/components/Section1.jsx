@@ -18,7 +18,7 @@ const Hero2 = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quidem?</p>
             </div>
             <div className='flex justify-evenly gap-[5%] flex-wrap font-[china]'>
-                <div className='box1 flex justify-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box1 flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-[#C3F97F] w-[60%] text-2xl text-wrap rounded-md'>Search engine optimization</h2>
                         <div className='mt-14 flex items-center gap-2'>
@@ -28,7 +28,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Search-engine12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box2 bg-black flex justify-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box2 bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-white w-[60%] text-2xl text-wrap rounded-md'>Per pay click advertising</h2>
                         <div className='mt-14 flex items-center gap-2 text-white'>
@@ -38,7 +38,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Pay-per-click12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box3 bg-black flex justify-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box3 bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-white w-[60%] text-2xl text-wrap rounded-md'>Social media marketing</h2>
                         <div className='mt-14 flex items-center gap-2 text-white'>
@@ -48,7 +48,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Social-Media12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box4 flex justify-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box4 flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-[#C3F97F] w-[60%] text-2xl text-wrap rounded-md'>E-mail marketing</h2>
                         <div className='mt-14 flex items-center gap-2'>

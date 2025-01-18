@@ -1,11 +1,27 @@
 import React from "react";
 import 'remixicon/fonts/remixicon.css'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+export var tl = gsap.timeline()
 
 const Navbar = () => {
+
+  useGSAP(() => {
+    tl.from('nav .logo', { y:-30,
+        opacity: 0,duration:1
+     });
+    tl.from('nav h4 , nav button', { y:-30,
+        opacity: 0,
+        duration:0.5,
+        stagger:0.15
+     });
+     
+});
   return (
-    <nav className="w-screen h-[80px]">
+    <nav className="nav w-screen h-[80px]">
       <div className="flex justify-between h-full mx-[7%] items-center">
-        <div className="flex gap-2">
+        <div className="logo flex gap-2">
         <i class="ri-shining-2-fill rotate-45 text-4xl"></i>
           <h2 className="font-bold text-[27px]">WizardZ</h2>
         </div>

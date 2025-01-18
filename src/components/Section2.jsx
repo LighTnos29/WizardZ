@@ -1,6 +1,11 @@
 import React from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+
 
 const Section2 = () => {
+
   return (
     <div className='mx-[7%] h-full mt-20 font-[china] font-extrabold'>
         <div className='bg-[#F3F3F3] w-full h-[350px] rounded-3xl flex'>
@@ -15,8 +20,7 @@ const Section2 = () => {
                 </div>
             </div>
         </div>
-        <div className='mt-20'>
-            
+        <div className='box mt-20 h-[200px] w-[200px] bg-red-700'>
         </div>
     </div>
   )

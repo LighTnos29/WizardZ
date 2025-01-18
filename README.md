@@ -7,7 +7,6 @@ Welcome to **WizardZ**, a visually stunning clone of the [Positivus website](htt
 ## 🚀 Features
 
 - **Interactive Animations**: Smooth animations powered by **GSAP** for an engaging user experience.
-- **Responsive Design**: Fully responsive layout, ensuring a seamless experience across all devices.
 - **Modern Frameworks**: Built with **React.js**, **Tailwind CSS**, and **GSAP**.
 - **Clean UI**: Minimalistic design inspired by the original website.
 
