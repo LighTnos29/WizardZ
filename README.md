@@ -1,8 +1,23 @@
-# React + Vite
+# WizardZ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **WizardZ**, a visually stunning clone of the [Positivus website](https://positivus-af4f26.webflow.io/). This project showcases seamless animations, responsive design, and interactive elements built with modern web development technologies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- **Interactive Animations**: Smooth animations powered by **GSAP** for an engaging user experience.
+- **Responsive Design**: Fully responsive layout, ensuring a seamless experience across all devices.
+- **Modern Frameworks**: Built with **React.js**, **Tailwind CSS**, and **GSAP**.
+- **Clean UI**: Minimalistic design inspired by the original website.
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**: For building reusable UI components and managing application state.
+- **Tailwind CSS**: For rapid styling and responsive design.
+- **GSAP (GreenSock Animation Platform)**: For creating smooth animations and transitions.
+- **HTML**: For structuring the web pages.
+
+
