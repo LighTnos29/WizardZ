@@ -1,7 +1,59 @@
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
+import {tl} from "./Navbar"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero2 = () => {
+    useGSAP(()=>{
+        gsap.from('.images img',{
+            opacity:0,
+            y:50,
+            duration:0.5,
+            stagger:0.2,
+            scrollTrigger:{
+                trigger:'.images img',
+                start:'top 90%',
+                end: 'top 0',
+                scrub:2,
+            }
+        })
+        gsap.from('.services h1 , .services p',{
+            opacity:0,
+            x:-100,
+            duration:1,
+            stagger:0.2,
+            scrollTrigger:{
+                trigger:'.services',
+                start:'top 90%',
+                scrub:2,
+                end: "top 0"
+            }
+        })
+        gsap.from('.boxes .box-left',{
+            x:-800,
+            stagger:0.5,
+            scrollTrigger:{
+                trigger:'.services',
+                start:'top 90%',
+                end: 'top 0',
+                scrub:2
+            }
+        })
+        gsap.from('.boxes .box-right',{
+            x:800,
+            stagger:0.5,
+            scrollTrigger:{
+                trigger:'.services',
+                start:'top 90%',
+                end: 'top 0',
+                scrub:2
+            }
+        })
+    })
   return (
     <div className='h-full mx-[7%]'>
         <div className='images flex justify-between items-center'>
@@ -17,8 +69,8 @@ const Hero2 = () => {
                 <h1 className='text-[23px] font-semibold bg-[#C3F97F] w-fit p-1'>Services</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quidem?</p>
             </div>
-            <div className='flex justify-evenly gap-[5%] flex-wrap font-[china]'>
-                <div className='box1 flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+            <div className='boxes flex justify-evenly gap-[5%] flex-wrap font-[china]'>
+                <div className='box-left flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-[#C3F97F] w-[60%] text-2xl text-wrap rounded-md'>Search engine optimization</h2>
                         <div className='mt-14 flex items-center gap-2'>
@@ -28,7 +80,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Search-engine12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box2 bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box-right bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-white w-[60%] text-2xl text-wrap rounded-md'>Per pay click advertising</h2>
                         <div className='mt-14 flex items-center gap-2 text-white'>
@@ -38,7 +90,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Pay-per-click12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box3 bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box-left bg-black flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-white w-[60%] text-2xl text-wrap rounded-md'>Social media marketing</h2>
                         <div className='mt-14 flex items-center gap-2 text-white'>
@@ -48,7 +100,7 @@ const Hero2 = () => {
                     </div>
                     <img src="https://encoders.studio/wp-content/uploads/2024/04/Social-Media12-1024x1024.png" alt="" className='mr-7 h-[225px] w-[45%]' />
                 </div>
-                <div className='box4 flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
+                <div className='box-right flex justify-center items-center h-[250px] w-[47.5%] [box-shadow:-0px_8px_0px_black] flex-shrink-0 mt-16 border-2 border-black rounded-[30px]'>
                     <div className='h-fit w-[50%] mt-7 mb-7 ml-7'>
                         <h2 className='p-1 bg-[#C3F97F] w-[60%] text-2xl text-wrap rounded-md'>E-mail marketing</h2>
                         <div className='mt-14 flex items-center gap-2'>

@@ -14,7 +14,7 @@ const Navbar = () => {
     tl.from('nav h4 , nav button', { y:-30,
         opacity: 0,
         duration:0.5,
-        stagger:0.15
+        stagger:0.07
      });
      
 });

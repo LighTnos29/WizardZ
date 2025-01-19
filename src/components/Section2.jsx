@@ -1,13 +1,15 @@
 import React from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 const Section2 = () => {
 
   return (
-    <div className='mx-[7%] h-full mt-20 font-[china] font-extrabold'>
+    <div className='bar mx-[7%] h-full mt-20 font-[china] font-extrabold'>
         <div className='bg-[#F3F3F3] w-full h-[350px] rounded-3xl flex'>
             <div className=' w-[50%] m-10 flex-col items-center justify-center pt-10'>
                 <h1 className='text-[30px]'>Let's make this thing happen</h1>
@@ -19,8 +21,6 @@ const Section2 = () => {
                     <img src="https://cdn.prod.website-files.com/65c3aad23a5a1cc719c8993d/65c49bc025cb62f5bad7f7cf_Illustration.svg" alt="" className='h-[350px]' />
                 </div>
             </div>
-        </div>
-        <div className='box mt-20 h-[200px] w-[200px] bg-red-700'>
         </div>
     </div>
   )
