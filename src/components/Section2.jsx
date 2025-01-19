@@ -7,6 +7,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Section2 = () => {
+    useGSAP(()=>{
+        gsap.from('.bar',{
+            y:-100,
+            opacity:0,
+            duration:2,
+            delay:1,
+            scrollTrigger:{
+                trigger: '.bar',
+                start:'top 70%',
+                end:'top 50%',
+                scrub:1
+            }
+        })
+    })
 
   return (
     <div className='bar mx-[7%] h-full mt-20 font-[china] font-extrabold'>
